@@ -1,0 +1,39 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans'
+
+body, html
+  height: 100%
+  width: 100%
+  overflow: hidden
+
+h2
+  text-align: center
+  margin-top: 5vh
+
+#pic-wrap
+  display: inline-block
+  box-sizing: border-box
+  padding: 1em
+  position: absolute
+  z-index: 1
+  &.center
+      top: 50%
+      left: 50%
+      transform: translateX(-50%) translateY(-50%)
+
+#pic-wrap img
+  height: 150px
+
+#win-wrap
+  display: none
+  position: absolute
+  height: 100%
+  width: 100%
+  background-color: transparentize(black, .4)
+  z-index: 4
+
+  img
+    position: absolute
+    border-radius: 10px
+    top: 50%
+    left: 50%
+    transform: translateX(-50%) translateY(-50%)
